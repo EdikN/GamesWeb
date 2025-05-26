@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu+Mono:wght@700&display=swap');
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-grid a {
+    text-decoration: none;
+    color: #333;
+}
+
+.game-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.game-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #ff4754; 
+}
+
+.game-info {
+    padding: 15px;
+    background: #f8f9fa;
+    text-decoration: none;
+}
+
+.game-info h3 {
+    font-family: 'Ubuntu Mono', monospace; 
+    color: #2d3436;
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.game-info p {
+    font-family: 'Press Start 2P', cursive;
+    color: #636e72;
+    font-size: 0.6em;
+    line-height: 1.4;
+}
