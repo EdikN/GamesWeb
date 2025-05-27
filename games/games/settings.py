@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-njx$9itk#jm4p*ti^%zu6&y@v^8f7+ti%gchfo+r=y$bn)7^b(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['choclategames.store', '127.0.0.1']
 
 
 # Application definition
