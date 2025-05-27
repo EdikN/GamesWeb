@@ -10,12 +10,12 @@
 <body>
     <header class="header">
         <a href="/" class="menu-button">Главное меню</a>
-        <div class="game-title">{% block game_title %} Зомбоид {% endblock %}</div>
+        <div class="game-title">{{game.title}}</div>
     </header>
 
     {% block content %}
         <!-- Контент по умолчанию -->
-        <iframe id="content-frame" src="http://choclategames.ru/New/zombie/" ></iframe>
+        <iframe id="content-frame" src="{{game.game_url}}" ></iframe>
     {% endblock %}
 </body>
 </html>

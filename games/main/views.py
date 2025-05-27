@@ -9,4 +9,4 @@ def index(request):
 
 def game_detail(request,game_slug):
     games = get_object_or_404(Games, slug=game_slug)
-    return render(request, 'main/game.html', {'games': games})
+    return render(request, 'main/game.html', {'game': games})
