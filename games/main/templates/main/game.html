@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Game Platform{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/game.css' %}">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="menu-button">Главное меню</a>
+        <div class="game-title">{% block game_title %} Зомбоид {% endblock %}</div>
+    </header>
+
+    {% block content %}
+        <!-- Контент по умолчанию -->
+        <iframe id="content-frame" src="http://choclategames.ru/New/zombie/" ></iframe>
+    {% endblock %}
+</body>
+</html>

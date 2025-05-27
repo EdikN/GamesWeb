@@ -9,6 +9,6 @@ class Games(models.Model):
     thumbnail= models.URLField('Url иконки', max_length=250, default='')
     genre = models.CharField('Жанр', max_length=30, default='')
     date = models.DateField('Дата разработки',default= date(2020, 10, 15))
-    
+    slug = models.SlugField(default='')
     def __str__(self):
         return self.title
