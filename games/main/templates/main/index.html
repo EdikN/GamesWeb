@@ -13,10 +13,10 @@
         </div>
         <nav class="genre-menu">
             <h4>Жанры</h4>
-            <a href="/Action/" class="genre-link">Экшен</a>
-            <a href="/Strategy/" class="genre-link">Стратегии</a>
-            <a href="/Finance/" class="genre-link">Экономические</a>
-            <a href="/Race/" class="genre-link">Гонки</a>
+            <a href={% url 'games-by-genre' 'action' %} class="genre-link">Экшен</a>
+            <a href={% url 'games-by-genre' 'strategy' %} class="genre-link">Стратегии</a>
+            <a href={% url 'games-by-genre' 'finance' %} class="genre-link">Экономические</a>
+            <a href={% url 'games-by-genre' 'race' %} class="genre-link">Гонки</a>
             <a href="/" class="genre-link">Все игры</a>
         </nav>
     </div>
